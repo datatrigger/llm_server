@@ -22,6 +22,8 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
+	implementation("com.google.cloud:spring-cloud-gcp-data-firestore:6.2.2")
+
 }
 
 tasks.withType<Test> {

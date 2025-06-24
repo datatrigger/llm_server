@@ -23,6 +23,6 @@ public class LlmController {
     // @return A Mono containing the response for the frontend.
     @PostMapping("/prompt")
     public Mono<PromptResponse> getLlmResponse(@RequestBody PromptRequest request) {
-        return llmService.promptLlm(request.prompt()).map(PromptResponse::new);
+        return llmService.promptLlm(request);
     }
 }
